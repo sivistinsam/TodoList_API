@@ -1,0 +1,116 @@
+/* Defining root colors */
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+/* universal styling */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira sans", sans-serif;
+}
+/* Styling the body */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark);
+  color: var(--light);
+  justify-content: center;
+  align-items: center;
+}
+/* Styling the main div class */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+}
+/* Styling the heading */
+
+.heading {
+  margin: 20px;
+}
+/* Styling the sub main div class */
+
+.sub-main {
+  width: 100%;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 10px;
+}
+/* Styling the Input field */
+
+#input {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--darker);
+  color: var(--light);
+  width: 500px;
+}
+/* Styling the Add button */
+
+#add {
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 20px;
+  outline: var(--dark);
+  cursor: pointer;
+  font-weight:700;
+  width: 60px;
+  height:40px;
+  margin-left: 10px;
+  /* pointer-events: none; */
+}
+/* Styling the delete button*/
+#cross {
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 20px;
+  outline: var(--dark);
+  cursor: pointer;
+  font-weight:700;
+  width: 30px;
+  height: 20px;
+  /* pointer-events: none; */
+}
+/* Styling the Checkbox */
+.check-box{
+  margin-left:10px;
+  display: flex;
+  column-gap: 10px;
+}
+/* Styling the input placeholder */
+
+.input::placeholder {
+  color: var(--gray);
+}
+/* Styling the todo list item div class */
+
+.tasks {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+/* Styling the Todo list items */
+
+.item {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content:space-between;
+  margin-top: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--darker);
+}
+/* Styling completed tasks with strike through effect */
+.completed {
+  text-decoration: line-through;
+}
